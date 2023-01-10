@@ -3,19 +3,87 @@
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -23,25 +91,48 @@ time, mark, audio, video {
   font: inherit;
   vertical-align: baseline;
 }
+
+body {
+  font-family: "Myriad Set Pro", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+}
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block;
 }
+
 body {
   line-height: 1;
 }
-ol, ul {
+
+ol,
+ul {
   list-style: none;
 }
-blockquote, q {
+
+blockquote,
+q {
   quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: '';
   content: none;
 }
+
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -52,21 +143,247 @@ table {
 /*                 Setup                  */
 
 /*               Borderbox                */
-*, *:before, *:after {
+*,
+*:before,
+*:after {
   -webkit-box-sizing: border-box;
-     -moz-box-sizing: border-box;
-          box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
+
 /* clearfix */
-.clearfix:before, .clearfix:after {
+.clearfix:before,
+.clearfix:after {
   content: "";
   display: table;
 }
+
 .clearfix:after {
   clear: both;
 }
+
 .clearfix {
   clear: both;
   *zoom: 1;
 }
+
 /*               End of Setup             */
+
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_bold.ttf") format("truetype");
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_semibold.ttf") format("truetype");
+  font-weight: 600;
+}
+
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_medium.ttf") format("truetype");
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_text.ttf") format("truetype");
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_thin.ttf") format("truetype");
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: "Myriad Set Pro";
+  src: url("fonts/myriad-set-pro_ultralight.ttf") format("truetype");
+  font-weight: 100;
+}
+
+
+nav {
+  background-color: rgba(0, 0, 0, 0.8);
+  width: 100%;
+}
+
+#container {
+  max-width: 85%;
+  margin: 0 auto;
+  align-items: center;
+}
+
+#container ul {
+  margin: 0 auto;
+  display: flex;
+  width: 100%;
+}
+
+header nav li {
+  display: inline-block;
+  width: 10%;
+  margin: 0 auto
+}
+
+header nav li img {
+  display: block;
+  margin: 0 auto;
+}
+
+
+#hero {
+  text-align: center;
+  position: relative;
+}
+
+#hero img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+}
+
+#hero_text {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+}
+
+#hero_text h1 {
+  margin-top: 50px;
+  font-size: 60px;
+  font-weight: 600;
+}
+
+#hero_iphone13 {
+  width: 100%;
+}
+
+#hero_caption {
+  text-align: center;
+  width: 100%;
+}
+
+#hero_text h5 {
+  font-size: 30px;
+  margin: 30px;
+  font-weight: 600;
+}
+
+#iphone13_links {
+  margin-bottom: 40px;
+}
+
+#hero a {
+  font-size: 25px;
+  color: rgb(0, 170, 255);
+  font-weight: 300;
+}
+
+#sub_hero {
+  display: flex;
+  min-width: 100%;
+  align-items: center;
+}
+
+#sub_hero img {
+  display: inline-block;
+  margin: auto;
+  width: 25%;
+  object-fit: cover;
+  height: 275px;
+  align-items: center;
+}
+
+#prefooter {
+  margin: 40px 0;
+  width: 100%;
+  text-align: center;
+}
+
+#prefooter a {
+  color: rgb(0, 170, 255);
+  font-weight: 700;
+}
+
+footer {
+  width: 100%;
+  background-color: gainsboro;
+  height: 600px;
+  padding: 40px 90px;
+}
+
+#links {
+  min-width: 100%;
+  display: flex;
+}
+
+#links li {
+  display: inline-block;
+  width: 20%;
+  margin: 0 auto;
+}
+
+h3,
+h4 {
+  margin: 8px 0;
+}
+
+
+
+h3 {
+  font-weight: bold;
+  margin: 10px 0;
+  font-size: 18px;
+}
+
+h4 {
+  font-size: 15px;
+  color: gray;
+}
+
+.below {
+  margin-top: 30px;
+}
+
+#shop,
+#legal {
+  width: 100%;
+  clear: both;
+  color: darkgray;
+  font-size: 15px;
+}
+
+#shop {
+  margin-top: 30px;
+}
+
+#shop a {
+  color: rgb(0, 170, 255);
+}
+
+hr {
+  width: 100%;
+  margin: 10px 0px;
+  border: solid darkgray .1px;
+}
+
+.legal_col {
+  display: inline-block;
+  position: relative;
+}
+
+#language {
+  align-items: flex-end;
+  position: absolute;
+  right: 90px;
+}
+
+#legal-col2 a,
+#language a {
+  color: gray;
+  font-size: 15px;
+}
